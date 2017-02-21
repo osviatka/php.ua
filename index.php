@@ -10,10 +10,9 @@
 </head>
 <body>
 <div id="wrapper">
-    <?php include "includes/database.php"; ?>
     <h1>Be honest</h1>
     <h2 class="second-header">It's your personal files...</h2>
-    <form action="/handle.php" method="POST" name="name">
+    <form action="submitcheck.php" method="POST" name="name">
         <fieldset>
             <legend class="bold-title">Shortly about yourself</legend>
             <div>
@@ -23,7 +22,7 @@
                 </p>
                 <p>
                     <label for="surname">Surname: </label>
-                    <input type="name" name="surname" size="30" maxlength="10" id="surname"/>
+                    <input type="text" name="surname" size="30" maxlength="10" id="surname"/>
                 </p>
                 <p class="person">
                     <span>Sex: </span>

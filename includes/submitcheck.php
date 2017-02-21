@@ -9,9 +9,9 @@
 </head>
 <body>
 
-<h1>Request has been sent successfully: go check <a href="datalist.php">List</a></h1>
+<h1>Request has been sent successfully: go check <a href="includes/datalist.php">List</a></h1>
 <?php
-require_once 'Database.php';
+require_once 'includes/database.php';
 $form = new Database("localhost", "root", "", "geekhub");
 $form->connect();
 if (isset($_REQUEST["submit"]))
@@ -28,11 +28,11 @@ if (isset($_REQUEST["submit"]))
     $socialStatus = $_REQUEST["socstatus"];
     $address = $_REQUEST["address"];
     $doff = implode(", ", $_REQUEST["doff"]);
-    $bestСompany = $_REQUEST["bestcompany"];
+    $bestCompany = $_REQUEST["bestcompany"];
     $readBooks = $_REQUEST["book"];
     $userComment = $_REQUEST["comment"];
     $selectCompany = $_REQUEST["selectcompany"];
     $spam = implode(", ", $_REQUEST["spam"]);
     $task = $_REQUEST["task"];
-    $form->insert($name, $surname, $sex1, $age, $sex2, $birthday, $familyStatus, $socialStatus, $address, $doff, $bestCompanн, $readBooks, $userComment, $selectCompany, $spam, $task);
+    $form->insert($name, $surname, $sex1, $age, $sex2, $birthday, $familyStatus, $socialStatus, $address, $doff, $bestCompany, $readBooks, $userComment, $selectCompany, $spam, $task);
 }

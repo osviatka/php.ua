@@ -36,7 +36,7 @@
     <tbody>
 
     <?php
-    require_once 'Database.php';
+    require_once 'database.php';
     $list = new Database("localhost", "root", "", "geekhub");
     $result = $list->select();
     if ($result)
