@@ -37,7 +37,7 @@
 
     <?php
     require_once 'database.php';
-    $list = new Database("localhost", "root", "", "geekhub");
+    $list = new Database("localhost", "root", "", "php");
     $result = $list->select();
     if ($result)
     {

@@ -12,7 +12,7 @@
 <h1>Request has been sent successfully: go check <a href="includes/datalist.php">List</a></h1>
 <?php
 require_once 'includes/database.php';
-$form = new Database("localhost", "root", "", "geekhub");
+$form = new Database("localhost", "root", "", "php");
 $form->connect();
 if (isset($_REQUEST["submit"]))
 {

@@ -23,7 +23,7 @@ return $connection;
 }
     public function insert($name, $surname, $sex, $age, $sex2, $birthday, $familystatus, $socialstatus, $address, $doff, $bestcompany, $readbooks, $usercomment, $selectcompany, $spam, $task)
     {
-        return mysqli_query($this->connect(), "INSERT form (name, surname, sex, age, sex2, birthday, familystatus, socialstatus, address, activities, whatyoulike, bookshaveread, usercomment, multiselect, spam, complexity) VALUES 
+        return mysqli_query($this->connect(), "INSERT form (name, surname, sex, age, sex2, birth, famstatus, socstatus, address, doff, bestcompany, book, comment, selectcompany, spam, task) VALUES 
         ('$name', '$surname', '$sex', '$age', '$sex2', '$birthday', '$familystatus', '$socialstatus', '$address', '$doff', '$bestcompany', '$readbooks', '$usercomment', '$selectcompany', '$spam', '$task')");
     }
     public function select()
